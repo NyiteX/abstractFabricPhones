@@ -84,7 +84,7 @@ int main()
 	t.push_back(CP_factory.createPhone());
 	int i;
 	for (i = 0; i < t.size(); i++)  t[i]->CreatePhone();
-
+	for (i = 0; i < t.size(); i++) delete t[i];
 	return 1;
 
 	//garbage
